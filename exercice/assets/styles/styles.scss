@@ -1,0 +1,25 @@
+$toc: false;
+@charset "UTF-8";
+
+// Table of content is stored in `toc.css` file
+
+// TOOLS
+@import "tools/**/*.scss";
+
+// GENERICS
+@import "generics/_generics.normalize.scss";
+@import "generics/_generics.box-sizing.scss";
+@import "generics/_generics.reduced-motion.scss";
+@import "generics/_generics.reset.scss";
+
+// ELEMENTS
+@import "elements/**/*.scss";
+
+// OBJECTS
+@import "objects/**/*.scss";
+
+// COMPONENTS
+@import "components/**/*.scss";
+
+// UTILITIES
+@import 'utilities/**/*.scss";

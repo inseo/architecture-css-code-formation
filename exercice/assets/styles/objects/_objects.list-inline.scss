@@ -1,0 +1,20 @@
+@if $toc {
+  /* - List-inline______________Simple abstraction for setting lists out in a line */
+} @else {
+  /* List inline (object)
+    ========================================================================== */
+
+  .o-list-inline {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .o-list-inline__item {
+    display: inline-block;
+  }
+
+  .o-list-inline__item:not(:first-child) {
+    margin-left: rem(-4); // -4px;
+  }
+}

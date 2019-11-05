@@ -1,0 +1,44 @@
+@if $toc {
+  /* - Font_____________________Px to em/rem function. */
+}
+
+// Font functions (tool)
+// ==========================================================================
+//
+// Convert px to em and rem
+// @note We assume that the default font-size is 16px
+//
+//  .usage {
+//    padding: em(18, 12); // 18px
+//    font-size: rem(12); // 12px
+//  }
+
+// px to em function
+@function em($target, $context) {
+
+  @if (type-of($target) != number) {
+    @error "`#{$target}` needs to be a number.";
+  }
+
+  @if (type-of($context) != number) {
+    @error "`#{$context}` needs to be a number.";
+  }
+
+  @if $target == 0 { @return 0; }
+  @return #{$target / $context}em;
+}
+
+// px to rem function
+@function rem($target, $root: 16) {
+
+  @if (type-of($target) != number) {
+    @error "`#{$target}` needs to be a number.";
+  }
+
+  @if (type-of($root) != number) {
+    @error "`#{$root}` needs to be a number.";
+  }
+
+  @if $target == 0 { @return 0; }
+  @return #{$target / $root}rem;
+}

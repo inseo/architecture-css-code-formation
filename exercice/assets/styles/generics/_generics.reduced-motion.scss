@@ -1,0 +1,17 @@
+@if $toc {
+  /* - Reduced-motion___________Specific reset styles for reduced motion mode */
+} @else {
+  /* Reduced motion mode
+   ========================================================================== */
+
+  /**
+  * Disable smooth scroll behavior
+  * @see [Smooth scrolling links with only CSS](https://gomakethings.com/smooth-scrolling-links-with-only-css/)
+  */
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}

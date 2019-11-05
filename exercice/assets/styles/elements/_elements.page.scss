@@ -1,0 +1,24 @@
+@if $toc {
+  /* - Page_____________________Page-level styles (html and body) */
+} @else {
+  /* Page
+   ========================================================================== */
+
+  /**
+  * Default html and body styles
+  * @note We assume that the default font-size is 16px
+  */
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    color: #3b4954;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    font-size: 1rem; // 16px
+    line-height: 1.5; // 24px
+    background-color: #ffffff;
+  }
+}

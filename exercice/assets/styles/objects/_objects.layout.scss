@@ -1,0 +1,17 @@
+@if $toc {
+  /* - Layout___________________Generic layout module. */
+} @else {
+  /* Layout (object)
+    ========================================================================== */
+
+  /**
+  * @note We assume that the default font-size is 16px
+  */
+
+  .o-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

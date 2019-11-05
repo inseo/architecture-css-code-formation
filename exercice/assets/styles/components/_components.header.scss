@@ -1,0 +1,10 @@
+@if $toc {
+  /* - Header___________________Header styles */
+} @else {
+  /* Header (component)
+    ========================================================================== */
+
+  .c-header {
+    background-color: #474747;
+  }
+}

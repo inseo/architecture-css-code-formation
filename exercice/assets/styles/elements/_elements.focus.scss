@@ -1,0 +1,18 @@
+@if $toc {
+  /* - Focus____________________Default focus styles */
+} @else {
+  /* Focus
+    ========================================================================== */
+
+  /**
+  * Focus on elements with `tabindex="-1"` value
+  * Suppress the focus outline on elements that cannot be accessed via keyboard.
+  * This prevents an unwanted focus outline from appearing around elements that might still respond to pointer events.
+  * @author [SUIT CSS](https://suitcss.github.io/)
+  * @see [Stackoverflow](https://stackoverflow.com/questions/32911355/whats-the-tabindex-1-in-bootstrap-for#32912224)
+  */
+
+  [tabindex='-1']:focus {
+    outline: none;
+  }
+}

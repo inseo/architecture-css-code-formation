@@ -1,0 +1,31 @@
+@if $toc {
+  /* - Buttons__________________Button styles */
+} @else {
+  /* Button (component)
+    ========================================================================== */
+
+  /**
+  * @note We assume that the default font-size is 16px
+  */
+
+  .c-button {
+    display: inline-block;
+    border: 2px solid #02baab;
+    padding: 1em em(18, 12); // 12px 18px
+    font-weight: 700;
+    font-size: rem(12); // 12px
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #02baab;
+    transition: color 0.25s, border-color 0.25s;
+    background: none;
+    cursor: pointer;
+  }
+
+  .c-button:hover,
+  .c-button:focus {
+    border-color: #ae0f8d;
+    color: #ae0f8d;
+    text-decoration: none;
+  }
+}

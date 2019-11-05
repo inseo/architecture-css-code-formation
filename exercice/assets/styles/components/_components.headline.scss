@@ -1,0 +1,34 @@
+@if $toc {
+  /* - Headline_________________Generic headlines styles */
+} @else {
+  /* Headline (component)
+    ========================================================================== */
+
+  /**
+  * @note We assume that the default font-size is 16px
+  */
+
+  .c-h1 {
+    position: relative;
+    margin-bottom: em(48, 36); // 48px
+    padding-bottom: em(24, 36); // 24px
+    font-size: rem(36); // 36px
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: calc(50% - 27px);
+      bottom: 0;
+      height: em(6, 36); // 6px
+      width: em(54, 36); // 54px
+      background-color: #eeeeee;
+    }
+  }
+
+  .c-h6 {
+    margin-bottom: em(4, 16); // 4px
+    font-size: 1rem; // 16px;
+    line-height: 1.125;
+  }
+}

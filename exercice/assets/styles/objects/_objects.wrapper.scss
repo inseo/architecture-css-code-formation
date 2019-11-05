@@ -1,0 +1,17 @@
+@if $toc {
+  /* - Wrapper__________________Wrapper and page constraint */
+} @else {
+  /* Wrapper (object)
+    ========================================================================== */
+
+  /**
+  * Page-level constraining and wrapping elements.
+  * @note We assume that the default font-size is 16px
+  */
+
+  .o-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: rem(930); // 930px
+  }
+}

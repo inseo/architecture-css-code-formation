@@ -1,0 +1,56 @@
+@if $toc {
+  /* - Example__________________ITCSS examples (image, url, detail, favorite button) styles */
+} @else {
+  /* Example (component)
+    ========================================================================== */
+
+  /**
+  * @note We assume that the default font-size is 16px
+  */
+
+  .c-example {
+    position: relative;
+  }
+
+  .c-example__img {
+    display: block;
+    text-align: center;
+  }
+
+  .c-example__detail {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: em(12, 14) em(18, 14); // 12px 18px
+    font-size: rem(14); // 14px
+    color: #fff;
+    background-color: #3d3d3d;
+  }
+
+  .c-example__url:hover,
+  .c-example__url:focus {
+    color: #ffae00;
+  }
+
+  // Add - Withdraw favorite button
+  .c-example__favorite {
+    position: absolute;
+    top: rem(10); // 10px
+    right: rem(10); // 10px
+    border: 0;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+  }
+
+  .c-example__favorite:hover {
+    filter: brightness(100%) sepia(100) saturate(50) hue-rotate(-50deg);
+  }
+
+  .c-example__favorite:focus {
+    outline: 1px dotted rgba(#fff, 0.5);
+    outline-offset: 0.25em;
+    background-color: rgba(#fff, 0.1);
+  }
+}

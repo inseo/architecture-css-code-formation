@@ -1,0 +1,15 @@
+@if $toc {
+  /* - Image____________________Overwrite width and height for standalone images */
+} @else {
+  /* Image (component)
+    ========================================================================== */
+
+  /**
+  * @note We assume that the default font-size is 16px
+  */
+
+  .c-img-logo {
+    width: rem(84); // 84px
+    height: rem(48); // 48px
+  }
+}

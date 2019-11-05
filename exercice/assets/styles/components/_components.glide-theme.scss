@@ -1,0 +1,92 @@
+@if $toc {
+  /* - Glide-theme______________Theme styles of Glide.js (carousel) */
+} @else {
+  /* Glide theme (carousel)
+    ========================================================================== */
+
+  /**
+  * @note We assume that the default font-size is 16px
+  */
+
+  /**
+  * Bullets
+  */
+
+  .glide__bullets {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: inline-flex;
+    list-style: none;
+    transform: translateX(-50%);
+  }
+
+  .glide__bullet {
+    margin: 0 rem(8); // 8px
+    padding: 0;
+    width: rem(10); // 10px
+    height: rem(10); // 10px
+    line-height: 0;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    background-color: #fff;
+  }
+
+  .glide__bullet:hover {
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .glide__bullet:focus {
+    outline: 1px dotted rgba(#fff, 0.5);
+    outline-offset: rem(8); // 8px
+    border: 2px solid white;
+    background-color: #02baab;
+  }
+
+  .glide__bullet--active {
+    background-color: #02baab;
+  }
+
+  /**
+  * Arrow
+  */
+
+  .glide--arrow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .glide--arrow .glide {
+    order: 1;
+  }
+
+  .glide--arrow .glide__arrows {
+    order: 2;
+    align-self: center;
+    margin-top: rem(24); // 24px
+  }
+
+  .glide__arrow {
+    padding: rem(6) rem(9); // 6px 9px
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .glide__arrow:hover {
+    filter: brightness(100%) sepia(100) saturate(40) hue-rotate(-30deg);
+  }
+
+  .glide__arrow:focus {
+    outline: 1px dotted rgba(#fff, 0.5);
+    outline-offset: 0.25em;
+    background-color: rgba(#fff, 0.1);
+  }
+
+  .glide__arrow:hover:focus {
+    filter: none;
+  }
+}
