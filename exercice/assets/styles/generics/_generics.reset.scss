@@ -1,0 +1,23 @@
+@if $toc {
+  /* - Reset____________________A pared back reset to remove margins */
+} @else {
+  /* Reset
+   ========================================================================== */
+
+  /**
+  * A very simple reset that sits on top of Normalize.css.
+  */
+
+  body,
+  h1,
+  h2,
+  h3,
+  blockquote,
+  p,
+  ol,
+  ul,
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+}

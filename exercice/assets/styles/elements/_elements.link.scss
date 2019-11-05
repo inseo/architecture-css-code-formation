@@ -1,0 +1,27 @@
+@if $toc {
+  /* - Link_____________________Hyperlink styles */
+} @else {
+  /* Link
+   ========================================================================== */
+
+  /**
+  * Default styles for simple hyperlinks.
+  */
+
+  a,
+  a:visited {
+    color: #02baab;
+    text-decoration: none;
+  }
+
+  /**
+  * @see [Ordre des pseudo-classes des liens](http://romy.tetue.net/love-fuck-hate)
+  */
+
+  a:focus,
+  a:hover,
+  a:active {
+    color: #ae0f8d;
+    text-decoration: underline;
+  }
+}

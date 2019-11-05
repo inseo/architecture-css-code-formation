@@ -1,0 +1,17 @@
+@if $toc {
+  /* - Selection________________Default selection styles */
+} @else {
+  /* Selection
+   ========================================================================== */
+
+  /**
+  * Remove text-shadow in and customize selection highlight.
+  * @see <https://twitter.com/miketaylr/status/12228805301>
+  */
+
+  ::selection {
+    text-shadow: none;
+    color: #ffffff;
+    background: #fc7100;
+  }
+}

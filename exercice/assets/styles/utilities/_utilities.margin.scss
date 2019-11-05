@@ -1,0 +1,14 @@
+@if $toc {
+  /* - Margin___________________Simple margin helper classes */
+} @else {
+  /* Margin (utility)
+   ========================================================================== */
+
+  /**
+  * @note We assume that the default font-size is 16px
+  */
+
+  .u-mb-default {
+    margin-bottom: rem(24); // 24px
+  }
+}

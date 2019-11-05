@@ -1,0 +1,20 @@
+/**
+ * Règle CSS permettant de placer des éléments les uns à côté des autres.
+ *
+ * @see
+ * [flexbox](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Flexbox)
+ *
+*/
+
+.parent {
+  display: flex;
+  flex-wrap: wrap; /* Autorise le retour à la ligne */
+  justify-content: space-between; /* Réparti uniformément l'espace disponible entre les enfants */
+  width: 100%;
+}
+
+/* Élément prenant la moitié de la largeur de son parent */
+.enfant {
+  width: calc(100% / 2 - (1.875rem * 1 / 2));
+  /* = 50% - 30px x 1 (marge cumulée) ÷ 2 (nombre d'enfants par ligne) */
+}

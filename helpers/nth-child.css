@@ -1,0 +1,14 @@
+/**
+ * Règle CSS permettant de cibler un (ou plusieurs éléments) qui possèdent X éléments frères placés avant lui dans l'arbre du document
+ *
+ * @see
+ * [:nth-child](https://developer.mozilla.org/fr/docs/Web/CSS/:nth-child)
+ * [Mastering the :nth-child](http://nthmaster.com/)
+ * [:not](https://developer.mozilla.org/fr/docs/Web/CSS/:not)
+ *
+*/
+
+/* Cible tous les sélecteurs à l'exception des deux premiers enfant */
+.selecteur:not(:nth-child(-n+2)) {
+  margin-top: 10px;
+}
