@@ -1,0 +1,44 @@
+@if $toc {
+  /* - Testimony________________Quote styles */
+} @else {
+  /* Testimony (component)
+    ========================================================================== */
+
+  /**
+  * @note We assume that the default font-size is 16px
+  */
+
+  .c-testimony {
+    margin: rem(84) rem(10) rem(36); // 84px 10px 36px
+    text-align: center;
+  }
+
+  .c-testimony__content {
+    margin-bottom: em(12, 24); // 12px
+    font-size: rem(24); // 24px
+    line-height: 1.25;
+  }
+
+  .c-testimony__footer {
+    display: block;
+    color: #02baab;
+  }
+
+  .c-testimony__author {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .c-testimony__author::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -1em; // 16px;
+    margin-top: -1px;
+    width: em(12, 16); // 12px
+    height: 2px;
+    background-color: #02baab;
+  }
+}

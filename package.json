@@ -1,0 +1,26 @@
+{
+  "name": "architecture-css",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Support d'exercices de la formation Architecture CSS",
+  "author": "Corinne Durrmeyer <corinne@inseo.fr> (https://inseo.fr)",
+  "license": "see license in license.md",
+  "scripts": {
+    "next": "node .scripts/switch-exercise.js next",
+    "prev": "node .scripts/switch-exercise.js prev",
+    "previous": "node .scripts/switch-exercise.js prev",
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "beepbeep": "^1.2.2",
+    "browser-sync": "^2.26.3",
+    "chalk": "^3.0.0",
+    "del": "^3.0.0",
+    "fs-extra": "^8.1.0",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-svg-sprite": "^1.5.0"
+  },
+  "exercise": 1
+}

@@ -1,0 +1,45 @@
+@if $toc {
+  /* - Heading__________________Heading styles (h1 -> h6) */
+} @else {
+  /* Heading
+   ========================================================================== */
+
+  /**
+  * Simple default styles for headings 1 through 6.
+  * We assume that the default font-size is 16px.
+  */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 300;
+    line-height: 1.25;
+  }
+
+  h1 {
+    font-size: rem(36); // 36px
+  }
+
+  h2 {
+    font-size: rem(24); // 24px
+  }
+
+  h3 {
+    font-size: rem(22); // 22px
+  }
+
+  h4 {
+    font-size: rem(20); // 20px
+  }
+
+  h5 {
+    font-size: rem(18); // 18px
+  }
+
+  h6 {
+    font-size: 1rem; // 16px
+  }
+}

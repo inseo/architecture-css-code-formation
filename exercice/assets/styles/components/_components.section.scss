@@ -1,0 +1,30 @@
+@if $toc {
+  /* - Section__________________Sections styles */
+} @else {
+  /* Section (component)
+    ========================================================================== */
+
+  /**
+  * @note We assume that the default font-size is 16px
+  */
+
+  .c-section {
+    padding: rem(102) 0; // 102px 0
+  }
+
+  .c-section--presentation {
+    text-align: center;
+  }
+
+  .c-section--dark {
+    color: #ffffff;
+    background-color: #525252;
+  }
+
+  .c-section--testimony {
+    background-image: url("../img/sprite.svg#testimony");
+    background-size: auto rem(36); // 36px
+    background-position: 50% 102px;
+    background-repeat: no-repeat;
+  }
+}
