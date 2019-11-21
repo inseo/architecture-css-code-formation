@@ -226,8 +226,8 @@
       <div class="o-wrapper">
         <h2 class="c-h1">Ressources</h2>
         <div class="o-layout">
-          <div class="o-layout__item o-layout__item--third c-card">
-            <a href="#" tabindex="-1">
+          <div class="o-layout__item o-layout__item--third o-layout__item--half@m c-card">
+            <a class="u-txt-center" href="#" tabindex="-1">
               <img class="c-card__img" src="img/ITCSS&InuitCSS.png" alt="Architecture CSS avec ITCSS & InuitCSS" />
             </a>
             <h3 class="c-h2">
@@ -238,8 +238,8 @@
               <a href="#" tabindex="-1">Lire la suite</a>
             </span>
           </div>
-          <div class="o-layout__item o-layout__item--third c-card">
-            <a href="#" tabindex="-1">
+          <div class="o-layout__item o-layout__item--third o-layout__item--half@m c-card">
+            <a class="u-txt-center" href="#" tabindex="-1">
               <img class="c-card__img" src="img/xfive.jpg" alt="ITCSS: Scalable and Maintainable CSS Architecture" />
             </a>
             <h3 class="c-h2">
@@ -254,8 +254,8 @@
               </span>
             </span>
           </div>
-          <div class="o-layout__item o-layout__item--third c-card">
-            <a href="#" tabindex="-1">
+          <div class="o-layout__item o-layout__item--third o-layout__item--half@m c-card">
+            <a class="u-txt-center" href="#" tabindex="-1">
               <img class="c-card__img" src="img/justdoITCSS.jpg" alt="Just do ITCSS" />
             </a>
             <h3 class="c-h2">
@@ -341,7 +341,12 @@
       type: 'carousel',
       startAt: 0,
       perView: 3,
-      gap: 30
+      gap: 30,
+      breakpoints: {
+        991: {
+          perView: 2
+        }
+      }
     }).mount();
     new Glide('.js-glide--testimony', {
       type: 'carousel',

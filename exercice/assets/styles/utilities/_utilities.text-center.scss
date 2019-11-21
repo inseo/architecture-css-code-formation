@@ -1,0 +1,11 @@
+@if $toc {
+  /* - Text center______________Text align center helper classes */
+} @else {
+  /* Text align center (utility)
+   ========================================================================== */
+
+  .u-txt-center {
+    display: block;
+    text-align: center;
+  }
+}

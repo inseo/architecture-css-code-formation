@@ -28,4 +28,15 @@
   .o-layout__item--half:not(:nth-child(-n+2)) {
     margin-top: rem(48); // 48px
   }
+
+  // Specific layout on medium breakpoint
+  // Until 992px (lower or equal to 991px)
+  @media screen and (max-width: 61.9375rem) {
+    .o-layout__item--half\@m {
+      width: calc(100% / 2 - (1.875rem * 1 / 2)); // 1.875rem = 30px
+    }
+    .o-layout__item--half\@m:not(:nth-child(-n+2)) {
+      margin-top: rem(48); // 48px
+    }
+  }
 }
