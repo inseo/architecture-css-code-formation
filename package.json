@@ -22,5 +22,5 @@
     "gulp-sass-glob": "^1.1.0",
     "gulp-svg-sprite": "^1.5.0"
   },
-  "exercise": 5
+  "exercise": 6
 }

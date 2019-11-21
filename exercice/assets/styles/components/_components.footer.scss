@@ -18,6 +18,14 @@
     background-color: var(--footer-bgc);
   }
 
+  /**
+  * Avoid unwanted horizontal scrollbar on Edge and IE11
+  * @see [Parent container size calculated incorrectly if child element uses position: absolute in combination with transform: translate](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/107210/)
+  */
+  ._c-footer {
+    overflow-x: hidden;
+  }
+
   .c-footer::before {
     content: "";
     position: absolute;
