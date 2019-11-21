@@ -22,23 +22,23 @@
   }
 
   .c-nav__item--presentation {
-    border-top-color: #ffae00;
+    border-top-color: var(--nav__item--presentation);
   }
 
   .c-nav__item--testimony {
-    border-top-color: #fc7100;
+    border-top-color: var(--nav__item--testimony);
   }
 
   .c-nav__item--benefit {
-    border-top-color: #e51c5e;
+    border-top-color: var(--nav__item--benefit);
   }
 
   .c-nav__item--example {
-    border-top-color: #ae0f8d;
+    border-top-color: var(--nav__item--example);
   }
 
   .c-nav__item--asset {
-    border-top-color: #0c8fcc;
+    border-top-color: var(--nav__item--asset);
   }
 
   .c-nav__link {
@@ -75,23 +75,23 @@
   }
 
   .c-nav__item--presentation .c-nav__link::before {
-    border-top-color: #ffae00;
+    border-top-color: var(--nav__item--presentation);
   }
 
   .c-nav__item--testimony .c-nav__link::before {
-    border-top-color: #fc7100;
+    border-top-color: var(--nav__item--testimony);
   }
 
   .c-nav__item--benefit .c-nav__link::before {
-    border-top-color: #e51c5e;
+    border-top-color: var(--nav__item--benefit);
   }
 
   .c-nav__item--example .c-nav__link::before {
-    border-top-color: #ae0f8d;
+    border-top-color: var(--nav__item--example);
   }
 
   .c-nav__item--asset .c-nav__link::before {
-    border-top-color: #0c8fcc;
+    border-top-color: var(--nav__item--asset);
   }
 
   .c-nav__link:hover::before,

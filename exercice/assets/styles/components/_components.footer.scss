@@ -14,7 +14,7 @@
     font-size: rem(14); // 14px
     line-height: (24/14); // 24px
     color: #ffffff;
-    background-color: #1f2a32;
+    background-color: var(--footer-bgc);
   }
 
   .c-footer::before {
@@ -25,16 +25,7 @@
     height: rem(10); // 10px
     width: 100%;
     transform: translateX(-50%);
-    background-image: linear-gradient(
-      to right,
-      #ae0f8d 25%,
-      #0c8fcc 25%,
-      #0c8fcc 50%,
-      #e51c5e 50%,
-      #e51c5e 75%,
-      #ffae00 75%,
-      #ffae00 100%
-    );
+    background-image: var(--footer__before-bgi);
 
     // From 992px (992px or higher)
     @media screen and (min-width: 62rem) {
@@ -58,7 +49,7 @@
   }
 
   // Background-image on pseudo-element is preferred to background-image on list element
-  // due to IE111 (staggered background positioning).
+  // due to IE 11 (staggered background positioning).
   .c-footer__list--twitter .c-footer__list-item::before {
     content: "";
     position: absolute;
@@ -73,14 +64,19 @@
     display: block;
   }
 
+  .c-footer__link,
+  .c-footer__link:visited {
+    color: var(--footer__link-txt);
+  }
+
   .c-footer__link:hover,
   .c-footer__link:focus {
-    color: #ffae00;
+    color: var(--footer__link-focus-hover-txt);
   }
 
   .c-footer__date {
     display: block;
-    color: #85939f;
+    color: var(--footer__date-txt);
   }
 
   .c-footer__copyright {

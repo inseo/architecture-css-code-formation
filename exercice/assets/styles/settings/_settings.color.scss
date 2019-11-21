@@ -21,16 +21,13 @@
     --yellow-sea: #ffae00;
 
     // Definition (function)
-    --gradient: linear-gradient(
-      to right,
-      var(--violet-eggplant) 25%,
-      var(--cerulean) 25%,
-      var(--cerulean) 50%,
-      var(--amaranth) 50%,
-      var(--amaranth) 75%,
-      var(--yellow-sea) 75%,
-      var(--yellow-sea) 100%
-    );
+    --gradient : linear-gradient(
+        to right, var(--violet-eggplant) 25%,
+        var(--cerulean) 25%, var(--cerulean) 50%,
+        var(--amaranth) 50%, var(--amaranth) 75%,
+        var(--yellow-sea) 75%, var(--yellow-sea) 100%
+      );
+
 
     /** Abbreviations
     /*  - bgc => background-color
