@@ -1,0 +1,96 @@
+@if $toc {
+  /* - Christmas___________________Christmas styles for IE11 */
+} @else {
+  /* Christmas styles for IE11 (theme)
+    ========================================================================== */
+
+  @media screen and (-ms-high-contrast: none) {
+    /**
+    * Button
+    */
+
+    .t-christmas .c-button--dark {
+      border-color: #d33943;
+    }
+
+    .t-christmas .c-button--dark:hover,
+    .t-christmas .c-button--dark:focus {
+      border-color: #adb049;
+    }
+
+
+    /**
+    * Footer
+    */
+
+    .t-christmas .c-footer {
+      background-color: #2e2e36;
+    }
+
+    .t-christmas .c-footer::before {
+      background-image: linear-gradient(
+        to right, #d33943 25%,
+        #e1e0e6 25%, #e1e0e6 50%,
+        #e5a67b 50%, #e5a67b 75%,
+        #adb049 75%, #adb049 100%
+      );
+    }
+
+    .t-christmas .c-footer__list-icon {
+      color: #671612;
+    }
+
+    .t-christmas .c-footer__link,
+    .t-christmas .c-footer__link:visited {
+      color: #d33943;
+    }
+
+    .t-christmas .c-footer__link:hover,
+    .t-christmas .c-footer__link:focus {
+      color: #adb049;
+    }
+
+    .t-christmas .c-footer__date {
+      color: #e5a67b;
+    }
+
+
+    /**
+    * Header
+    */
+
+    .t-christmas .c-header {
+      background-color: #495058;
+    }
+
+
+    /**
+    * Nav
+    */
+
+    .t-christmas .c-nav__item--presentation,
+    .t-christmas .c-nav__item--presentation .c-nav__link::before {
+      border-top-color: #e1e0e6;
+    }
+
+    .t-christmas .c-nav__item--testimony,
+    .t-christmas .c-nav__item--testimony .c-nav__link::before {
+      border-top-color: #e5a67b;
+    }
+
+    .t-christmas .c-nav__item--benefit,
+    .t-christmas .c-nav__item--benefit .c-nav__link::before {
+      border-top-color: #d33943;
+    }
+
+    .t-christmas .c-nav__item--example,
+    .t-christmas .c-nav__item--example .c-nav__link::before {
+      border-top-color: #671612;
+    }
+
+    .t-christmas .c-nav__item--asset,
+    .t-christmas .c-nav__item--asset .c-nav__link::before {
+      border-top-color: #adb049;
+    }
+  }
+}
