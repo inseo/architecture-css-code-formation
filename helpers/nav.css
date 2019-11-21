@@ -1,0 +1,14 @@
+/**
+ * À partir de 720px, le bouton est masqué et la liste est affichée.
+ * Nous le masquons au départ car nous développons en mobile-first.
+ * @see [The perfect responsive menu
+ * (2019)](https://polypane.app/blog/the-perfect-responsive-menu-2019/)
+*/
+@media screen and (min-width: 45rem) {
+  .c-nav__button {
+    display: none;
+  }
+  .c-nav__list {
+    display: block;
+  }
+}

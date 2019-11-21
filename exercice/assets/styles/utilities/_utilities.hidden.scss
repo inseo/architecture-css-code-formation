@@ -1,0 +1,13 @@
+@if $toc {
+  /* - Hidden___________________Hidden helper classes */
+} @else {
+  /* Hidden (utility)
+   ========================================================================== */
+
+  // Until 720px (lower than or equal to 719px)
+  @media screen and (max-width: 44.9375rem) {
+    .u-hidden\@s {
+      display: none;
+    }
+  }
+}

@@ -6,16 +6,53 @@
 
   @media screen and (-ms-high-contrast: none) {
     /**
+    * Links
+    */
+
+    .t-christmas a,
+    .t-christmas a:visited {
+      color: #adb049;
+    }
+
+    .t-christmas a:focus,
+    .t-christmas a:hover,
+    .t-christmas a:active {
+      color: #d33943;
+    }
+
+
+    /**
     * Button
     */
 
+    .t-christmas .c-button {
+      color: #adb049;
+    }
+
+    .t-christmas .c-button:hover,
+    .t-christmas .c-button:focus {
+      color: #d33943;
+    }
+
     .t-christmas .c-button--dark {
+      color: #fff;
       border-color: #d33943;
     }
 
     .t-christmas .c-button--dark:hover,
     .t-christmas .c-button--dark:focus {
+      color: #fff;
       border-color: #adb049;
+    }
+
+
+    /**
+    * Example
+    */
+
+    .t-christmas .c-example__url:hover,
+    .t-christmas .c-example__url:focus {
+      color: #e5a67b;
     }
 
 
@@ -56,6 +93,16 @@
 
 
     /**
+    * Glide
+    */
+
+    .t-christmas .glide__bullet:focus,
+    .t-christmas .glide__bullet--active {
+      background-color: #e5a67b;
+    }
+
+
+    /**
     * Header
     */
 
@@ -65,8 +112,25 @@
 
 
     /**
+    * Images
+    */
+
+    .t-christmas .c-img-benefit,
+    .t-christmas .c-img-comment {
+      color: #d33943;
+    }
+
+
+    /**
     * Nav
     */
+
+    .t-christmas .c-nav__link,
+    .t-christmas .c-nav__link:visited,
+    .t-christmas .c-nav__link:hover,
+    .t-christmas .c-nav__link:focus {
+      color: #fff;
+    }
 
     .t-christmas .c-nav__item--presentation,
     .t-christmas .c-nav__item--presentation .c-nav__link::before {
@@ -91,6 +155,28 @@
     .t-christmas .c-nav__item--asset,
     .t-christmas .c-nav__item--asset .c-nav__link::before {
       border-top-color: #adb049;
+    }
+
+
+    /**
+    * Section
+    */
+
+    .t-christmas .c-section--dark {
+      background-color: #495058;
+    }
+
+
+    /**
+    * Testimony
+    */
+
+    .t-christmas .c-testimony__footer {
+      color: #e5a67b;
+    }
+
+    .t-christmas .c-section--testimony .c-section__img {
+      color: #e5a67b;
     }
   }
 }

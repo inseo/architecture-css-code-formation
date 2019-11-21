@@ -44,10 +44,12 @@
     outline-offset: rem(8); // 8px
     border: 2px solid white;
     background-color: #02baab;
+    background-color: var(--glide__bullet-focus-bgc);
   }
 
   .glide__bullet--active {
     background-color: #02baab;
+    background-color: var(--glide__bullet-active-bgc);
   }
 
   /**

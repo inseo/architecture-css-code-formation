@@ -38,7 +38,7 @@
 /* - Glide-theme______________Theme styles of Glide.js (carousel) */
 /* - Header___________________Header styles */
 /* - Headline_________________Generic headlines styles */
-/* - Image____________________Overwrite width and height for standalone images */
+/* - Image____________________Overwrite width, height and color for standalone images */
 /* - Nav______________________Main nav styles */
 /* - Section__________________Sections styles */
 /* - Testimony________________Quote styles */
@@ -47,5 +47,6 @@
 /* - Christmas___________________Christmas styles for IE11 */
 /*
 /* UTILITIES */
+/* - Hidden___________________Hidden helper classes */
 /* - Margin___________________Simple margin helper classes */
 /* - Text center______________Text align center helper classes */
