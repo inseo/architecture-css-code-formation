@@ -26,6 +26,19 @@
     }
   }
 
+  .c-h2 {
+    margin-bottom: em(12, 24); // 12px
+    font-size: rem(24); // 24px
+  }
+
+  .c-h3 {
+    font-size: rem(22); // 22px
+  }
+
+  .c-footer .c-h3 {
+    margin-bottom: em(36, 22); // 36px
+  }
+
   .c-h6 {
     margin-bottom: em(4, 16); // 4px
     font-size: 1rem; // 16px;

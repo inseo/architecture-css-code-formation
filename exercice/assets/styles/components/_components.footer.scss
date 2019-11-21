@@ -1,0 +1,84 @@
+@if $toc {
+  /* - Footer___________________Footer styles*/
+} @else {
+  /* Footer (component)
+    ========================================================================== */
+
+  /**
+  * @note We assume that the default font-size is 16px
+  */
+
+  .c-footer {
+    position: relative;
+    padding: em(72, 14) 0 em(48, 14); // 72px 48px
+    font-size: rem(14); // 14px
+    line-height: (24/14); // 24px
+    color: #ffffff;
+    background-color: #1f2a32;
+  }
+
+  .c-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: rem(10); // 10px
+    width: rem(930); // 930px
+    transform: translateX(-50%);
+    background-image: linear-gradient(
+      to right,
+      #ae0f8d 25%,
+      #0c8fcc 25%,
+      #0c8fcc 50%,
+      #e51c5e 50%,
+      #e51c5e 75%,
+      #ffae00 75%,
+      #ffae00 100%
+    );
+  }
+
+  .c-footer__list {
+    margin-bottom: em(48, 14); // 48px
+    list-style: none;
+    margin-left: 0;
+  }
+
+  .c-footer__list-item {
+    margin-bottom: em(24, 14); // 24px;
+  }
+
+  .c-footer__list--twitter .c-footer__list-item {
+    position: relative;
+    padding-left: em(36, 14); // 36px
+  }
+
+  // Background-image on pseudo-element is preferred to background-image on list element
+  // due to IE111 (staggered background positioning).
+  .c-footer__list--twitter .c-footer__list-item::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: em(24, 14); // 24px
+    height: em(21, 14); // 21px
+    background: url("../img/sprite.svg#twitter") 0 0 / contain no-repeat;
+  }
+
+  .c-footer__link {
+    display: block;
+  }
+
+  .c-footer__link:hover,
+  .c-footer__link:focus {
+    color: #ffae00;
+  }
+
+  .c-footer__date {
+    display: block;
+    color: #85939f;
+  }
+
+  .c-footer__copyright {
+    line-height: (46/14); // 46px;
+  }
+}

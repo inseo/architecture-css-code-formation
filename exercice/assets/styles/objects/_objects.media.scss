@@ -1,0 +1,34 @@
+@if $toc {
+  /* - Media____________________The media object */
+} @else {
+  /* Media (object)
+    ========================================================================== */
+
+  /**
+  * Place any image- and text-like content side-by-side.
+  * @see [The media object saves hundreds of lines of code](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code)
+  * @note We assume that the default font-size is 16px
+  */
+
+  .o-media {
+    display: block;
+  }
+
+  .o-media::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  .o-media__img {
+    float: left;
+    margin-right: rem(30); // 30px
+  }
+
+  // 1. Create a formatting context
+  // @see [Overflow – a secret benefit](http://www.stubbornella.org/content/2009/07/23/overflow-a-secret-benefit/)
+  .o-media__body {
+    display: block;
+    overflow: hidden; // 1
+  }
+}

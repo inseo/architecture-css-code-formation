@@ -28,4 +28,20 @@
     color: #ae0f8d;
     text-decoration: none;
   }
+
+  .c-button--dark {
+    text-transform: none;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .c-button--dark:visited {
+    color: inherit;
+  }
+
+  .c-button--dark:hover,
+  .c-button--dark:focus {
+    color: inherit;
+    border-color: #ffae00;
+  }
 }
