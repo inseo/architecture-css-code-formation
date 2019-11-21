@@ -30,6 +30,7 @@
   }
 
   .c-button--dark {
+    border-color: var(--button--dark-bdc);
     text-transform: none;
     font-weight: 400;
     color: #fff;
@@ -42,6 +43,6 @@
   .c-button--dark:hover,
   .c-button--dark:focus {
     color: inherit;
-    border-color: #ffae00;
+    border-color: var(--button--dark-focus-hover-bdc);
   }
 }

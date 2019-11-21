@@ -1,0 +1,55 @@
+@if $toc {
+  /* - Color-christmas__________Colors for christmas theme */
+} @else {
+  /* Colors (Christmas theme)
+    ========================================================================== */
+
+  /**
+  * @note Colors are named thanks to the [Chir.ag’s Name that Color utility](http://chir.ag/projects/name-that-color/).
+  */
+
+  .t-christmas {
+    // Definition (color)
+    --dark-tan: #671612;
+    --husk: #adb049;
+    --mischka: #e1e0e6;
+    --tonys-pink: #e5a67b;
+    --trout: #495058;
+    --tuna: #2e2e36;
+    --valencia: #d33943;
+
+    // Definition (function)
+    --gradient : linear-gradient(
+        to right,var(--valencia) 25%,
+        var(--mischka) 25%, var(--mischka) 50%,
+        var(--tonys-pink) 50%, var(--tonys-pink) 75%,
+        var(--husk) 75%, var(--husk) 100%
+      );
+
+
+    /** Abbreviations
+    /*  - bgc => background-color
+    /*  - bgi => background-image
+    /*  - bdc => border-color
+    /*  - txt => text (color)
+    */
+
+    // Assignation (components)
+    --button--dark-bdc: var(--valencia);
+    --button--dark-focus-hover-bdc: var(--husk);
+
+    --footer-bgc: var(--tuna);
+    --footer__before-bgi: var(--gradient);
+    --footer__link-txt: var(--valencia);
+    --footer__link-focus-hover-txt: var(--husk);
+    --footer__date-txt: var(--tonys-pink);
+
+    --header-bgc: var(--trout);
+
+    --nav__item--presentation: var(--mischka);
+    --nav__item--testimony: var(--tonys-pink);
+    --nav__item--benefit: var(--valencia);
+    --nav__item--example: var(--dark-tan);
+    --nav__item--asset: var(--husk);
+  }
+}

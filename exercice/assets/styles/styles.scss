@@ -3,6 +3,9 @@ $toc: false;
 
 // Table of content is stored in `toc.css` file
 
+// SETTINGS
+@import "settings/**/*.scss";
+
 // TOOLS
 @import "tools/**/*.scss";
 
