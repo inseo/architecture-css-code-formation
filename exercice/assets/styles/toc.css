@@ -22,11 +22,14 @@
 /* OBJECTS */
 /* - Layout___________________Generic layout module. */
 /* - List-inline______________Simple abstraction for setting lists out in a line */
+/* - Media____________________The media object */
 /* - Wrapper__________________Wrapper and page constraint */
 /*
 /* COMPONENTS */
 /* - Buttons__________________Button styles */
+/* - Card_____________________Card styles */
 /* - Example__________________ITCSS examples (image, url, detail, favorite button) styles */
+/* - Footer___________________Footer styles*/
 /* - Glide-core_______________Core styles of Glide.js (carousel) */
 /* - Glide-theme______________Theme styles of Glide.js (carousel) */
 /* - Header___________________Header styles */

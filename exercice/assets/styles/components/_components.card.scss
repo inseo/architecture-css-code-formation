@@ -1,0 +1,24 @@
+@if $toc {
+  /* - Card_____________________Card styles */
+} @else {
+  /* Card (component)
+    ========================================================================== */
+
+  /**
+  * @note We assume that the default font-size is 16px
+  */
+
+  .c-card {
+    border-bottom: 1px solid #c3c3c3;
+    padding-bottom: em(24, 16); // 24px
+  }
+
+  .c-card__img {
+    margin-bottom: em(24, 16); // 24px
+  }
+
+  .c-card__teaser {
+    font-size: rem(14); // 14px
+    margin-bottom: em(12, 14); // 12px
+  }
+}

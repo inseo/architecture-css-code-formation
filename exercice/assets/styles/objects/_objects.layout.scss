@@ -14,4 +14,18 @@
     justify-content: space-between;
     width: 100%;
   }
+
+  .o-layout__item--third {
+    width: calc(100% / 3 - (1.875rem * 2 / 3)); // 1.875rem = 30px
+  }
+
+  .o-layout__item--half {
+    width: calc(100% / 2 - (1.875rem * 1 / 2)); // 1.875rem = 30px
+  }
+
+  // Add margin-top on `o-layout__item--half` except for the first two
+  // @see [La pseudo-classe :nth-child](https://developer.mozilla.org/fr/docs/Web/CSS/:nth-child)
+  .o-layout__item--half:not(:nth-child(-n+2)) {
+    margin-top: rem(48); // 48px
+  }
 }
