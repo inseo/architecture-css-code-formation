@@ -57,6 +57,13 @@
   .glide--arrow {
     display: flex;
     flex-direction: column;
+
+    // Until 992px (lower or equal to 991px)
+    @media screen and (max-width: 61.9375rem) {
+      margin-right: auto;
+      margin-left: auto;
+      width: rem(610); // 610px
+    }
   }
 
   .glide--arrow .glide {

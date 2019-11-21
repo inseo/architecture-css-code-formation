@@ -10,8 +10,16 @@
   */
 
   .o-wrapper {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: rem(930); // 930px
+    padding-right: rem(30); // 30px
+    padding-left: rem(30); // 30px
+
+    // From 992px (992px or higher)
+    @media screen and (min-width: 62rem) {
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 0;
+      padding-left: 0;
+      max-width: rem(930); // 930px
+    }
   }
 }

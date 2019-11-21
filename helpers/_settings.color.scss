@@ -1,0 +1,60 @@
+@if $toc {
+  /* - Color____________________Default colors */
+} @else {
+  /* Colors (settings)
+    ========================================================================== */
+
+  /**
+  * @note Colors are named thanks to the [Chir.ag’s Name that Color utility](http://chir.ag/projects/name-that-color/).
+  */
+
+  :root {
+    // Definition (color)
+    --amaranth: #e51c5e;
+    --blaze-orange: #fc7100;
+    --caribbean-green: #02baab;
+    --cerulean: #0c8fcc;
+    --ebony-clay: #1f2a32;
+    --regent-gray: #85939f;
+    --tundora: #474747;
+    --violet-eggplant: #ae0f8d;
+    --yellow-sea: #ffae00;
+
+    // Definition (function)
+    --gradient: linear-gradient(
+      to right,
+      var(--violet-eggplant) 25%,
+      var(--cerulean) 25%,
+      var(--cerulean) 50%,
+      var(--amaranth) 50%,
+      var(--amaranth) 75%,
+      var(--yellow-sea) 75%,
+      var(--yellow-sea) 100%
+    );
+
+    /** Abbreviations
+    /*  - bgc => background-color
+    /*  - bgi => background-image
+    /*  - bdc => border-color
+    /*  - txt => text (color)
+    */
+
+    // Assignation (components)
+    --button--dark-bdc: var(--caribbean-green);
+    --button--dark-focus-hover-bdc: var(--yellow-sea);
+
+    --footer-bgc: var(--ebony-clay);
+    --footer__before-bgi: var(--gradient);
+    --footer__link-txt: var(--caribbean-green);
+    --footer__link-focus-hover-txt: var(--yellow-sea);
+    --footer__date-txt: var(--regent-gray);
+
+    --header-bgc: var(--tundora);
+
+    --nav__item--presentation: var(--yellow-sea);
+    --nav__item--testimony: var(--blaze-orange);
+    --nav__item--benefit: var(--amaranth);
+    --nav__item--example: var(--violet-eggplant);
+    --nav__item--asset: var(--cerulean);
+  }
+}
