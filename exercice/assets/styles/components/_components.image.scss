@@ -1,5 +1,5 @@
 @if $toc {
-  /* - Image____________________Overwrite width and height for standalone images */
+  /* - Image____________________Overwrite width, height and color for standalone images */
 } @else {
   /* Image (component)
     ========================================================================== */
@@ -16,10 +16,13 @@
   .c-img-benefit {
     width: rem(30); // 30px
     height: rem(30); // 30px
+    color: #02baab;
+    color: var(--img-benefit-txt);
   }
 
   .c-img-comment {
     width: rem(18); // 18px
     height: rem(14); // 14px
+    color: var(--img-comment-txt);
   }
 }

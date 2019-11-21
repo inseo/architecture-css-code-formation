@@ -11,6 +11,7 @@
   a,
   a:visited {
     color: #02baab;
+    color: var(--link-default-visited-txt);
     text-decoration: none;
   }
 
@@ -22,6 +23,7 @@
   a:hover,
   a:active {
     color: #ae0f8d;
+    color: var(--link-focus-hover-txt);
     text-decoration: underline;
   }
 }

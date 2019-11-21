@@ -34,9 +34,18 @@
     /*  - txt => text (color)
     */
 
+    // Assignation (elements)
+    --link-default-visited-txt: var(--husk);
+    --link-focus-hover-txt: var(--valencia);
+
+
     // Assignation (components)
+    --button-txt: var(--husk);
+    --button-focus-hover-txt: var(--valencia);
     --button--dark-bdc: var(--valencia);
     --button--dark-focus-hover-bdc: var(--husk);
+
+    --example__url-focus-hover-txt: var(--tonys-pink);
 
     --footer-bgc: var(--tuna);
     --footer__before-bgi: var(--gradient);
@@ -45,12 +54,24 @@
     --footer__link-focus-hover-txt: var(--husk);
     --footer__date-txt: var(--tonys-pink);
 
+    --glide__bullet-focus-bgc: var(--tonys-pink);
+    --glide__bullet-active-bgc: var(--tonys-pink);
+
     --header-bgc: var(--trout);
+
+    --img-benefit-txt: var(--valencia);
+    --img-comment-txt: var(--valencia);
 
     --nav__item--presentation: var(--mischka);
     --nav__item--testimony: var(--tonys-pink);
     --nav__item--benefit: var(--valencia);
     --nav__item--example: var(--dark-tan);
     --nav__item--asset: var(--husk);
+
+    --section--dark-bg: var(--trout);
+    --section--testimony__img-txt: var(--tonys-pink);
+
+
+    --testimony__footer-txt: var(--tonys-pink);
   }
 }

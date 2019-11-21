@@ -10,13 +10,14 @@
 
   .c-button {
     display: inline-block;
-    border: 2px solid #02baab;
+    border: 2px solid currentColor;
     padding: 1em em(18, 12); // 12px 18px
     font-weight: 700;
     font-size: rem(12); // 12px
     line-height: 1.5;
     text-transform: uppercase;
     color: #02baab;
+    color: var(--button-txt);
     transition: color 0.25s, border-color 0.25s;
     background: none;
     cursor: pointer;
@@ -24,8 +25,9 @@
 
   .c-button:hover,
   .c-button:focus {
-    border-color: #ae0f8d;
+    border-color: currentColor;
     color: #ae0f8d;
+    color: var(--button-focus-hover-txt);
     text-decoration: none;
   }
 

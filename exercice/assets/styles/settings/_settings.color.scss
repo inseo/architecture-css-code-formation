@@ -15,6 +15,7 @@
     --caribbean-green: #02baab;
     --cerulean: #0c8fcc;
     --ebony-clay: #1f2a32;
+    --emperor: #525252;
     --regent-gray: #85939f;
     --tundora: #474747;
     --violet-eggplant: #ae0f8d;
@@ -36,9 +37,18 @@
     /*  - txt => text (color)
     */
 
+    // Assignation (elements)
+    --link-default-visited-txt: var(--caribbean-green);
+    --link-focus-hover-txt: var(--violet-eggplant);
+
+
     // Assignation (components)
+    --button-txt: var(--caribbean-green);
+    --button-focus-hover-txt: var(--violet-eggplant);
     --button--dark-bdc: var(--caribbean-green);
     --button--dark-focus-hover-bdc: var(--yellow-sea);
+
+    --example__url-focus-hover-txt: var(--yellow-sea);
 
     --footer-bgc: var(--ebony-clay);
     --footer__before-bgi: var(--gradient);
@@ -47,12 +57,23 @@
     --footer__link-focus-hover-txt: var(--yellow-sea);
     --footer__date-txt: var(--regent-gray);
 
+    --glide__bullet-focus-bgc: var(--caribbean-green);
+    --glide__bullet-active-bgc: var(--caribbean-green);
+
     --header-bgc: var(--tundora);
+
+    --img-benefit-txt: var(--caribbean-green);
+    --img-comment-txt: var(--caribbean-green);
 
     --nav__item--presentation: var(--yellow-sea);
     --nav__item--testimony: var(--blaze-orange);
     --nav__item--benefit: var(--amaranth);
     --nav__item--example: var(--violet-eggplant);
     --nav__item--asset: var(--cerulean);
+
+    --section--dark-bg: var(--emperor);
+    --section--testimony__img-txt: var(--caribbean-green);
+
+    --testimony__footer-txt: var(--caribbean-green);
   }
 }

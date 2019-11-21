@@ -22,6 +22,7 @@
   .c-testimony__footer {
     display: block;
     color: #02baab;
+    color: var(--testimony__footer-txt);
   }
 
   .c-testimony__author {
@@ -39,6 +40,6 @@
     margin-top: -1px;
     width: em(12, 16); // 12px
     height: 2px;
-    background-color: #02baab;
+    background-color: currentColor;
   }
 }

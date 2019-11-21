@@ -19,12 +19,21 @@
   .c-section--dark {
     color: #ffffff;
     background-color: #525252;
+    background-color: var(--section--dark-bg);
   }
 
   .c-section--testimony {
-    background-image: url("../img/sprite.svg#testimonies");
-    background-size: auto rem(36); // 36px
-    background-position: 50% 102px;
-    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .c-section--testimony .c-section__img {
+    position: absolute;
+    top: rem(102); // 102px
+    left: 50%;
+    margin-left: rem(-22); // 22px
+    width: rem(44); // 44px
+    height: rem(36); // 36px
+    color: #02baab;
+    color: var(--section--testimony__img-txt);
   }
 }

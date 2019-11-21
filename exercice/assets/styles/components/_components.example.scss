@@ -31,6 +31,7 @@
   .c-example__url:hover,
   .c-example__url:focus {
     color: #ffae00;
+    color: var(--example__url-focus-hover-txt);
   }
 
   // Add - Withdraw favorite button
