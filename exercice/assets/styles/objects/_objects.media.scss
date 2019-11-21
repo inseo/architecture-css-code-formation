@@ -25,6 +25,10 @@
     margin-right: rem(30); // 30px
   }
 
+  .o-media--close .o-media__img {
+    margin-right: rem(12); // 12px
+  }
+
   // 1. Create a formatting context
   // @see [Overflow – a secret benefit](http://www.stubbornella.org/content/2009/07/23/overflow-a-secret-benefit/)
   .o-media__body {
