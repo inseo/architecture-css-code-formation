@@ -8,4 +8,12 @@
     display: block;
     text-align: center;
   }
+
+  // Until 720px (lower than or equal to 719px)
+  @media screen and (max-width: 44.9375rem) {
+    .u-txt-center\@s {
+      display: block;
+      text-align: center;
+    }
+  }
 }

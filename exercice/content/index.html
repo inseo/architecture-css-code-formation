@@ -16,7 +16,12 @@
         <img class="c-img-logo" src="img/itcss.svg" width="84" height="48" alt="ITCSS" />
       </h1>
       <nav class="c-nav">
-        <ul class="o-list-inline">
+        <button class="c-nav__button / js-nav__button" aria-expanded="false" aria-controls="menu">
+          <svg aria-label="Menu" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+            <path d="M4 8 L28 8 M4 16 L28 16 M4 24 L28 24"></path>
+          </svg>
+        </button>
+        <ul class="o-list-inline c-nav__list / js-nav__list" hidden>
           <li class="o-list-inline__item c-nav__item c-nav__item--presentation">
             <a href="#presentation" class="c-nav__link">Présentation</a>
           </li>
@@ -299,7 +304,7 @@
         <h2 class="c-h3">Ils en parlent</h2>
         <ul class="c-footer__list" lang="en">
           <li class="o-media o-media--close c-footer__list-item">
-            <svg class="o-media__img c-footer__list-icon">
+            <svg class="o-media__img c-footer__list-icon u-hidden@s">
               <use xlink:href="#twitter"></use>
             </svg>
             <div class="o-media__body">
@@ -313,7 +318,7 @@
             </div>
           </li>
           <li class="o-media o-media--close c-footer__list-item">
-            <svg class="o-media__img c-footer__list-icon">
+            <svg class="o-media__img c-footer__list-icon u-hidden@s">
               <use xlink:href="#twitter"></use>
             </svg>
             <div class="o-media__body">
@@ -325,7 +330,7 @@
             </div>
           </li>
           <li class="o-media o-media--close c-footer__list-item">
-            <svg class="o-media__img c-footer__list-icon">
+            <svg class="o-media__img c-footer__list-icon u-hidden@s">
               <use xlink:href="#twitter"></use>
             </svg>
             <div class="o-media__body">
@@ -361,13 +366,14 @@
       </div>
     </div>
     <div class="o-wrapper o-layout">
-      <span class="o-layout__item c-footer__copyright">© 2014 StylemixThemes. All rights reserved.</span>
+      <span class="o-layout__item c-footer__copyright u-txt-center@s">© 2014 StylemixThemes. All rights reserved.</span>
       <span class="o-layout__item">
-        <a class="c-button c-button--dark" href="#header">Retour en haut de page</a>
+        <a class="c-button c-button--dark u-txt-center@s" href="#header">Retour en haut de page</a>
       </span>
     </div>
   </footer>
 
+  <script src="js/toggleMenu.js"></script>
   <script src="js/glide.js"></script>
   <script>
     new Glide('.js-glide--arrow', {
@@ -378,6 +384,9 @@
       breakpoints: {
         991: {
           perView: 2
+        },
+        719: {
+          perView: 1
         }
       }
     }).mount();

@@ -4,8 +4,16 @@
   /* Header (component)
     ========================================================================== */
 
+  // 1. Initiate a positioning context
+  // Usefull to .c-nav__button on small breakpoint
   .c-header {
     background-color: #474747;
     background-color: var(--header-bgc);
+
+    // Until 720px (lower than or equal to 719px)
+    @media screen and (max-width: 44.93755rem) {
+      position: relative; // 1
+      padding-bottom: em(18, 16); // 18px
+    }
   }
 }

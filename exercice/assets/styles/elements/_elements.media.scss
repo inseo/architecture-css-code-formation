@@ -5,9 +5,10 @@
    ========================================================================== */
 
   /**
-  * Vertical alignment for medias
-  * Remove the gap between audio, canvas, iframes, images, videos and the bottom of their containers:
-  * @see [Vertical align media elements](https://github.com/h5bp/html5-boilerplate/issues/440)
+  * 1. Vertical alignment for medias
+  *    Remove the gap between audio, canvas, iframes, images, videos and the bottom of their containers:
+  *    @see [Vertical align media elements](https://github.com/h5bp/html5-boilerplate/issues/440)
+  * 2. Fluid images for responsive purposes
   */
 
   audio,
@@ -16,6 +17,7 @@
   img,
   svg,
   video {
-    vertical-align: middle;
+    vertical-align: middle; // 1
+    max-width: 100%; // 2
   }
 }

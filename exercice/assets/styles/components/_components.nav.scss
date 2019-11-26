@@ -13,6 +13,35 @@
     line-height: 1;
   }
 
+  .c-nav__button {
+    position: absolute;
+    top: 1.125rem; // 18px
+    right: 1.125rem; // 18px
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  @media screen and (max-width: 44.93755rem) {
+    .c-nav__list {
+      padding-top: 2.25rem; // 36px
+      text-align: center;
+    }
+  }
+
+  // From 720px (greater than or equal to 720px)
+  // The button is hidden and the list is shown.
+  // We hide it initially because we develop mobile first.
+  // @see [The perfect responsive menu (2019)](https://polypane.app/blog/the-perfect-responsive-menu-2019/)
+  @media screen and (min-width: 45rem) {
+    .c-nav__button {
+      display: none;
+    }
+    .c-nav__list {
+      display: block;
+    }
+  }
+
   .c-nav__item {
     position: relative;
     border-top-width: em(10, 12); // 10px

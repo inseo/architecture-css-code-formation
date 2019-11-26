@@ -13,6 +13,15 @@
     padding-bottom: em(24, 16); // 24px
   }
 
+  // Until 720px (lower than or equal to 719px)
+  // Border- and padding-bottom of last child is removed
+  @media screen and (max-width: 44.93755rem) {
+    .c-card:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+
   .c-card__img {
     margin-bottom: em(24, 16); // 24px
   }
