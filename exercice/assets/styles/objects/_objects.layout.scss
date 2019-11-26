@@ -8,30 +8,47 @@
   * @note We assume that the default font-size is 16px
   */
 
-  .o-layout {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
+  // Until 720px (lower than or equal to 719px)
+  @media screen and (max-width: 44.93755rem) {
+    .o-layout__item {
+      display: block;
+    }
+
+    // Elements have margin-bottom, with the exception of the last one
+    .o-layout__item:not(:last-child) {
+      margin-bottom: rem(24); // 24px
+    }
   }
 
-  .o-layout__item--third {
-    width: calc(100% / 3 - (1.875rem * 2 / 3)); // 1.875rem = 30px
-  }
 
-  .o-layout__item--half {
-    width: calc(100% / 2 - (1.875rem * 1 / 2)); // 1.875rem = 30px
-  }
+  // From 720px (greater than or equal to 720px)
+  @media screen and (min-width: 45rem) {
+    .o-layout {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
 
-  // Add margin-top on `o-layout__item--half` except for the first two
-  // @see [La pseudo-classe :nth-child](https://developer.mozilla.org/fr/docs/Web/CSS/:nth-child)
-  .o-layout__item--half:not(:nth-child(-n+2)) {
-    margin-top: rem(48); // 48px
+    .o-layout__item--third {
+      width: calc(100% / 3 - (1.875rem * 2 / 3)); // 1.875rem = 30px
+    }
+
+    .o-layout__item--half {
+      width: calc(100% / 2 - (1.875rem * 1 / 2)); // 1.875rem = 30px
+    }
+
+    // Add margin-top on `o-layout__item--half` except for the first two
+    // @see [La pseudo-classe :nth-child](https://developer.mozilla.org/fr/docs/Web/CSS/:nth-child)
+    .o-layout__item--half:not(:nth-child(-n+2)) {
+      margin-top: rem(48); // 48px
+    }
   }
 
   // Specific layout on medium breakpoint
-  // Until 992px (lower or equal to 991px)
-  @media screen and (max-width: 61.9375rem) {
+  // From 720px (greater than or equal to 720px)
+  // Until 992px (lower than or equal to 991px)
+  @media screen and (min-width: 45rem) and (max-width: 61.9375rem) {
     .o-layout__item--half\@m {
       width: calc(100% / 2 - (1.875rem * 1 / 2)); // 1.875rem = 30px
     }

@@ -60,11 +60,21 @@
     display: flex;
     flex-direction: column;
 
-    // Until 992px (lower or equal to 991px)
+    // Until 992px (lower than or equal to 991px)
     @media screen and (max-width: 61.9375rem) {
       margin-right: auto;
       margin-left: auto;
-      width: rem(610); // 610px
+    }
+
+    // Until 720px (lower than or equal to 719px)
+    @media screen and (max-width: 44.9375rem) {
+      max-width: rem(290); // 290px
+    }
+
+    // From 720px (greater than or equal to 720px)
+    // Until 992px (lower than or equal to 991px)
+    @media screen and (min-width: 45rem) and (max-width: 61.9375rem) {
+      max-width: rem(610); // 610px = 290 (width) × 2 + 30 (space)
     }
   }
 
